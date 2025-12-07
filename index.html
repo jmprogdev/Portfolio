@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav">
+                <li><a  href="index.html">DASHBOARD</a></li>
+                <li><a  href="about me.html">ABOUT ME</a></li>
+                <li><a  href="skills.html">SKILLS</a></li>
+                <li><a  href="projects.html">PROJECTS</a></li>
+                <li><a  href="experience.html">EXPERIENCE</a></li>
+                <li><a  href="education.html">EDUCATION</a></li>
+                <li><a  href="contact.html">CONTACT</a></li>
+           
+        </div>
+    </nav>
+    <body class="light-mode">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav> 
+        <button id="toggle-dark-mode" class="btn btn-secondary">Toggle Dark Mode</button>
+    </body>
+    <div clas="clock" id="clock" class="text-center mb-4"></div>
+    <div id="greeting" class="text-center mb-4"></div>
+
+    <section id="home" class="text-center mb-5">
+        <img src="IMG_20251006_012145_607.jpg" alt="Your Name" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
+        <h1>Jan Michael Retreta</h1>
+        <p class="tagline">Where Technology Meets Innovation.</p>
+        <p>Creative and detail-oriented web developer specializing in responsive design, front-end frameworks, and seamless user experiences.</p>
+        <br>
+    </section>
+    <br> <br>
+    <div class="container mb-5">
+        <div class="container1 text-center mb-4">
+            <h3>Random Quote</h3>
+            <p id="quote">Click the button to get a quote!</p>
+            <button id="quoteBtn" class="btn btn-secondary">Get Quote</button>
+        </div>
+        <div class="Increment mb-4">
+            <h3>Counter: <span id="counter">0</span></h3>
+            <button id="incrementBtn" class="btn btn-secondary">Increment</button>
+        </div>
+        <div class="mb-5">
+            <h3>To-Do List</h3>
+            <input type="text" id="taskInput" class="form-control" placeholder="Add a new task">
+            <button id="addTaskBtn" class="btn btn-secondary mt-2">Add Task</button>
+            <ul id="taskList" class="list-group mt-3"></ul>
+        </div>
+    </div>
+
+    <footer class="text-center py-2 footer-light">
+        <a href="contact.html" id="cntctbtn" class="btn btn-secondary">Contact Me</a>
+        <br>
+           <p>&copy; 2024 JMR PORTFOLIO. All rights reserved.</p>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="darkmode.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

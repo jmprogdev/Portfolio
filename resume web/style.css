@@ -1,0 +1,278 @@
+/* --- Color Variables & Font Defaults --- */
+:root {
+    --color-yellow: #FDC70F; /* The primary bright yellow */
+    --color-dark-grey: #262626; /* The main dark background */
+    --color-medium-grey: #4C4C4C; /* Light text on dark background */
+    --color-background-footer: #333333; /* Slightly lighter grey for footer */
+    --color-white: #ffffff;
+    --font-header: 'Oswald', 'Arial Black', sans-serif; /* Strong, geometric font */
+    --font-body: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0; 
+    font-family: var(--font-body);
+}
+
+.resume-container {
+    max-width: 900px; /* Adjusted size for a compact, print-like look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Left Column (Yellow/Black) --- */
+
+.left-column {
+    background-color: var(--color-dark-grey);
+    color: var(--color-dark-grey); 
+    padding: 0; 
+    position: relative;
+    /* This overflow hidden is key to managing the profile image section boundary */
+    overflow: hidden; 
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 10px solid var(--color-yellow); 
+    z-index: 2;
+    position: relative;
+}
+
+/* Yellow Sections General Styling */
+.section-block {
+    background-color: var(--color-yellow);
+    padding: 25px 30px;
+}
+
+.section-title-left {
+    font-size: 1.1rem;
+    font-family: var(--font-header);
+    font-weight: 700;
+    background:var(--color-dark-grey);
+    color: var(--color-white);
+    border-bottom: 3px solid var(--color-dark-grey);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 7px;
+}
+
+/* Contact Styling */
+.list-unstyled{
+margin-left: 23px;
+}
+.contact-list li {
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+}
+
+.contact-icon {
+    background-color: var(--color-dark-grey);
+    color: var(--color-yellow);
+    padding: 6px 7px;
+    border-radius: 3px;
+    margin-right: 2px;
+    margin-left: -23px;
+    width: 30px;
+    text-align: center;
+}
+
+/* Education Styling */
+.level-of-studies {
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.years {
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.description-small {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+/* Skills Styling */
+.skill-intro {
+    font-size: 0.85rem;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.skill-bar-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+
+.skill-bar {
+    background-color: var(--color-dark-grey);
+    height: 8px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--color-white);
+}
+
+/* --- Right Column (Dark Grey) --- */
+
+.right-column {
+    background-color: var(--color-dark-grey);
+    color: var(--color-medium-grey);
+    padding: 0;
+}
+
+.section-content {
+    padding: 25px 40px;
+}
+
+/* Header Section Styling */
+.header-section {
+    padding: 0 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.name-large {
+    font-family: var(--font-header);
+    font-size: 2.8rem;
+    color: var(--color-white);
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.job-title-pill {
+    display: inline-block;
+    background-color: var(--color-yellow);
+    color: var(--color-dark-grey);
+    padding: 2px 15px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header-separator {
+    background-color: var(--color-yellow);
+    height: 3px;
+    opacity: 1;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.summary-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+/* Right Section Title (Custom Line) */
+.section-title-right {
+    font-size: 1.25rem;
+    font-family: var(--font-header);
+    color: var(--color-dark-grey);
+    text-align: center;
+    background: white;
+    max-width: 250px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section-title-right::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px; 
+    height: 5px;
+}
+
+/* Experience Items */
+.company-position {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-yellow);
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.years-right {
+    font-size: 0.85rem;
+    color: var(--color-white);
+    margin-bottom: 8px;
+}
+
+.description-right {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--color-white);
+}
+
+/* References Section */
+.references-section {
+    padding-top: 10px; 
+}
+
+.reference-details {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--color-white);
+    
+}
+
+.reference-details strong {
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+/* Footer/Social Section */
+.footer-social-section {
+    background-color: var(--color-background-footer); 
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 30px; /* Space above the footer */
+}
+
+.follow-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.social-icons a {
+    color: var(--color-dark-grey);
+    background-color: var(--color-white);
+    font-size: 1.1rem;
+    margin: 0 5px;
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--color-yellow);
+}

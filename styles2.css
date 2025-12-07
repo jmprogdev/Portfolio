@@ -1,0 +1,15 @@
+/* Example styles.css content (needs more styling for aesthetics) */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body.dark-mode {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+body.dark-mode .bg-light {
+    background-color: #343a40 !important;
+}
+/* Add more rules for other elements in dark mode */

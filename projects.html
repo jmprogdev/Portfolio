@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li><a  href="index.html">DASHBOARD</a></li>
+                <li><a  href="about me.html">ABOUT ME</a></li>
+                <li><a  href="skills.html">SKILLS</a></li>
+                <li><a  href="projects.html">PROJECTS</a></li>
+                <li><a  href="experience.html">EXPERIENCE</a></li>
+                <li><a  href="education.html">EDUCATION</a></li>
+                <li><a  href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <body class="light-mode">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav> 
+        <button id="toggle-dark-mode" class="btn btn-secondary">Toggle Dark Mode</button>
+    </body>
+    
+<section id="projects" class="mb-5">
+    <h2 class="text-center">PROJECTS</h2>
+    
+    <div class="text-center mb-4">
+        <button class="btn btn-secondary filter-button" data-filter="all">All</button>
+        <button class="btn btn-secondary filter-button" data-filter="web">Web Apps</button>
+        <button class="btn btn-secondary filter-button" data-filter="design">Designs</button>
+    </div>
+
+    <div class="row">
+ 
+        <div class="col-md-4 project-item web">
+            <div class="card">
+                <img src="Screenshot 2024-12-06 050948.png" class="card-img-top" alt="Project 1" data-toggle="lightbox" data-gallery="gallery">
+                <div class="card-body">
+                    <h5 class="card-title">NASA WEBSITE</h5>
+                    <p class="card-text">A brief description of Project 1. Technologies used: HTML, CSS, JavaScript.</p>
+                </div>
+            </div>
+        </div>
+        
+   
+        <div class="col-md-4 project-item design">
+            <div class="card">
+                <img src="Retreta_Jan-Michael_ENROLLMENTPOSTER.jpg" class="card-img-top" alt="Project 2" data-toggle="lightbox" data-gallery="gallery">
+                <div class="card-body">
+                    <h5 class="card-title">POSTER</h5>
+                    <p class="card-text">A brief description of Project 2. Technologies used: Canva.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 project-item web">
+            <div class="card">
+                <img src="Screenshot 2024-12-06 051306.png" class="card-img-top" alt="Project 3" data-toggle="lightbox" data-gallery="gallery">
+                <div class="card-body">
+                    <h5 class="card-title">Database System</h5>
+                    <p class="card-text">A brief description of Project 3. Technologies used: Sql, Php, Html</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="text-center py-2 footer-light">
+    <br>
+        <p>&copy; 2024 JMR PORTFOLIO. All rights reserved.</p>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="script.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
